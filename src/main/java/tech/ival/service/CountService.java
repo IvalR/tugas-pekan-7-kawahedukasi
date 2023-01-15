@@ -34,7 +34,7 @@ public class CountService {
         kebunModel.komoditas = req.getString("komoditas");
         kebunModel.total = Integer.valueOf(req.getString("total"));
         kebunModel.persist();
-        System.out.println(itung());
+//        System.out.println(itung());
 
     }
 
