@@ -79,11 +79,6 @@ public class KebunController {
     @Blocking
     public Uni<Void> sendEmailUsingReactiveMailer() throws IOException {
         JsonObject result = excelService.generateExcel();
-        JsonObject req = countService.resetTotal();
-        KebunModel kebunModel = new KebunModel();
-        kebunModel.komoditas = req.getString("komoditas");
-        kebunModel.total = req.getInteger("total");
-        kebunModel.persist();
         return hello.to("maikelkepin13@gmail.com")
                 .subject("Hello from qute")
                 .data("name","Ival")

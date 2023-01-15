@@ -23,7 +23,7 @@ public class CountService {
         return z;
     }
 
-    @Scheduled(cron="0 39 11 ? * SUN *")
+    @Scheduled(cron="0 57 13 ? * SUN *")
     @Transactional
     public void count(){
 
